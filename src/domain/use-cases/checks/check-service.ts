@@ -7,7 +7,7 @@ interface CheckServiceUseCase {
 
 type SuccessCallback = () => void;
 type ErrorCallback = (error: string ) => void;
-
+const module_name : string = 'Check-Service';
 
 export class CheckService implements CheckServiceUseCase {
     //INYECTA EL LOGREPOSITORY
@@ -25,19 +25,21 @@ export class CheckService implements CheckServiceUseCase {
             if (!req.ok) {
                 throw new Error(`Error on check service ${url}`);
             }
-            const log = new LogEntity(
-                `Url: ${url} is running`, 
-                LogSeverityLevel.low
-            );
+            const log = new LogEntity({
+                message: `Url: ${url} is running`, 
+                level: LogSeverityLevel.low,
+                origin: module_name
+            });
             this.logRepository.saveLog(log );
             this.successCalback();
             return true;
         } catch (error) {
             const errorMessage = `${error}`;
-            const log = new LogEntity(
-                errorMessage,
-                LogSeverityLevel.high
-            )
+            const log = new LogEntity({
+                message: errorMessage,
+                level: LogSeverityLevel.high,
+                origin: module_name
+            });
             this.logRepository.saveLog(log);
             this.errorCallback(errorMessage)
             return false;

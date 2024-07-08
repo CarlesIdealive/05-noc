@@ -21,3 +21,11 @@
 {"message":"Url: http://localhost:3000 is running","level":"low","createdAt":"2024-07-08T13:42:35.006Z"}
 {"message":"Url: http://localhost:3000 is running","level":"low","createdAt":"2024-07-08T13:42:40.011Z"}
 {"message":"TypeError: fetch failed","level":"high","createdAt":"2024-07-08T15:21:30.049Z"}
+{"message":"TypeError: fetch failed","level":"high","createdAt":"2024-07-08T15:51:55.062Z"}
+{"message":"TypeError: fetch failed","level":"high","origin":"Check-Service","createdAt":"2024-07-08T16:26:15.055Z"}
+{"message":"TypeError: fetch failed","level":"high","origin":"Check-Service","createdAt":"2024-07-08T16:26:20.006Z"}
+{"message":"TypeError: fetch failed","level":"high","origin":"Check-Service","createdAt":"2024-07-08T16:26:25.012Z"}
+{"message":"TypeError: fetch failed","level":"high","origin":"Check-Service","createdAt":"2024-07-08T16:48:00.046Z"}
+{"message":"TypeError: fetch failed","level":"high","origin":"Check-Service","createdAt":"2024-07-08T16:48:05.024Z"}
+{"message":"TypeError: fetch failed","level":"high","origin":"Check-Service","createdAt":"2024-07-08T16:49:05.054Z"}
+{"message":"Email Send","level":"medium","origin":"Email Service","createdAt":"2024-07-08T19:13:14.945Z"}
